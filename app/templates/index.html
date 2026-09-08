@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quick Filler</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header><div><strong>Quick Filler</strong><span>Transcrição assistida de documentos trabalhistas</span></div></header>
+<main>
+<section class="card upload"><h1>Transcrever PDF</h1><p>Envie um cartão de ponto ou holerite. O processamento preserva incertezas com <code>?</code>.</p>
+<div class="controls"><label>Tipo<select id="tipo"><option value="cartao-ponto">Cartão de ponto</option><option value="holerite">Holerite</option></select></label><label>PDF<input id="arquivo" type="file" accept="application/pdf"></label><button id="processar">Processar PDF</button></div><div id="status" class="status">Aguardando arquivo.</div></section>
+<section id="resultado" class="hidden"><div class="toolbar"><div><strong>Revisão</strong><span id="summary"></span></div><div><button id="salvar" class="secondary">Salvar correções</button><button id="baixar">Baixar XLSX</button></div></div>
+<div class="workspace"><div class="panel"><h2>PDF original</h2><iframe id="pdf" title="PDF original"></iframe></div><div class="panel"><h2>Transcrição editável</h2><div id="avisos" class="notices"></div><div id="tabela"></div></div></div></section></main><script src="/static/app.js"></script></body></html>
